@@ -17,22 +17,22 @@ function setup() {
   createCanvas(400, 400);
   background(255);
 
-  // Face
+  // Face-code academy/youtube
   fill(255, 0, 0);
   ellipse(200, 200, 200, 200);
 
-  // Eyes
+  // Eyes-code academy/youtube
   fill(0);
   ellipse(160, 170, 30, 50);
   ellipse(240, 170, 30, 50);
 
-  // Eyebrows
+  // Eyebrows-code academy/youtube
   stroke(0);
   strokeWeight(5);
-  line(130, 130, 170, 150);
+  line(140, 130, 170, 150);
   line(210, 150, 250, 130);
 
-  // Mouth
+  // Mouth-code academy/youtube
   noFill();
   stroke(0);
   strokeWeight(5);
