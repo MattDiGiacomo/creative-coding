@@ -16,24 +16,21 @@ function draw(circle) {
 function setup() {
   createCanvas(400, 400);
   background(255);
-  drawAngerEmoji();
-}
 
-function drawAngerEmoji() {
   // Face
   fill(255, 0, 0);
   ellipse(200, 200, 200, 200);
 
   // Eyes
   fill(0);
-  ellipse(160, 170, 30, 30);
-  ellipse(240, 170, 30, 30);
+  ellipse(160, 170, 30, 50);
+  ellipse(240, 170, 30, 50);
 
   // Eyebrows
   stroke(0);
   strokeWeight(5);
-  line(140, 150, 180, 160);
-  line(220, 160, 260, 150);
+  line(130, 130, 170, 150);
+  line(210, 150, 250, 130);
 
   // Mouth
   noFill();
@@ -43,5 +40,5 @@ function drawAngerEmoji() {
 }
 
 function draw() {
-  // No continuous drawing needed
+  // No need to draw anything continuously
 }
