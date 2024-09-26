@@ -4,8 +4,14 @@ function setup() {
 
   // disable animation
   noLoop();
+
 }
 
 function draw() {
   background(220);
+
+for (let x = 0; x<8; x +=1){
+
+cicle(x,80,50)
+
 }
