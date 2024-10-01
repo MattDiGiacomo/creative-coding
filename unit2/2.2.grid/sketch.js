@@ -10,8 +10,18 @@ function setup() {
 function draw() {
   background(220);
 
-for (let x = 0; x<8; x +=1){
+for (let x = 1; x < 9; x += 1){
 
-cicle(x,80,50)
+circle(x * 50,80,50);
+
+}
+for (let x = 1; x < 9; x += 1){
+for (let y = 1; y < 9; y+=1){
+
+circle(x * 50, y * 50,50);
+
+}
+
+}
 
 }
