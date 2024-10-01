@@ -21,7 +21,7 @@ fill(random(255), random(255), random(255));
 strokeWeight(random(1,15))
 stroke(random(0,200),25,235)
 circle(x * 60, y * 60,60);
-
+  
 }
 
 }
