@@ -10,7 +10,7 @@ function setup() {
 function draw() {
   background(220);
 
-for (let x = 1; x < 9; x += 1){
+for (let x = 0; x < 0; x += 1){
 
 circle(x * 50,80,50);
 
