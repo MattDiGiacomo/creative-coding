@@ -1,18 +1,23 @@
-function preload(){
-  // load the image from a file
-	img = loadImage();
-}
+
 
 function setup() {
 
   // create the canvas
-  createCanvas(800, 800);
+  createCanvas(400, 400);
+  noLoop();
+  nofill();
   
 }
 
 function draw() {
   background(220);
 
-  // render the image
-  image(img,10,10,100,100);
+  translate(50,50);
+  rect(0,0,300,300);
+
+  let from = color("red"); // start here
+  let to = color("purple"); // end here
+
+
+for 
 }
