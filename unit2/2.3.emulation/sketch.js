@@ -1,24 +1,29 @@
 function setup() {
-  // create the canvas
-  createCanvas(600, 800);
-
-  // disable animation
-  noLoop();
-}
-
-function draw() {
-
-  background(255);
+createCanvas(800,800);
+background(255);
 stroke(0);
-strokeweight(2);
-noFill();
+strokeWeight(1);
 
-function setup() {
-createCanvas(400,400);
+line(400, 200, 400, 600);
+line(401, 201, 401, 601);
+line(402, 202, 402, 602);
+line(404, 204, 404, 604);
+line(405, 205, 405, 605);
+line(407, 207, 407, 607);
+line(409, 209, 409, 609);
+line(410, 210, 410, 610);
+
+
+
+line(200, 400, 600, 400);
+line(203, 403, 603, 403);
+line(205, 405, 605, 405);
+line(210, 410, 610, 410);
 }
 function draw() {
-  stroke(0);
-  strokeweight(2);
-  for (let x = 0; x<= width; x += spacing)
-  }
+
 }
+
+
+
+
