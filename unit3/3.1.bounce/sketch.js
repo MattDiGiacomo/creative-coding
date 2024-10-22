@@ -14,7 +14,7 @@ function draw() {
 
 translate(width / 2, height / 2);
 
-circle(x,y,10);
+circle(x,y,20);
 
 if (x > 200 | x < -200){
   xspeed = -xspeed;
