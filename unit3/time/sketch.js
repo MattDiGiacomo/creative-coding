@@ -6,9 +6,10 @@ function draw() {
   background(220);
 
   textSize(20);
-  text("hour: " + hour(), 50, 50);
-  text("minute: " + minute(), 50, 75);
-  text("second: " + second(), 50, 100);
-  text("milisecond" + millis(), 50, 125);
+  text("hour: " + hour(), 60, 50);
+  text("minute: " + minute(), 140, 50);
+  text("second: " + second(), 245, 50);
+  
+  
 
 }
