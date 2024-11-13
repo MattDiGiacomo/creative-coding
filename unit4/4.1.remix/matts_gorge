@@ -47,10 +47,10 @@ a {
 var t=0;
 var n=0;
 var paths=0;
-var above='toll,nose,sum,to,steep,dawn,wash,meal'.split(',');
-var below='rest,greet,now,yell,run,loud,red,sit'.split(',');
-var trans='scream,fist,rage,blue,wild,cash,flex,late'.split(',');
-var imper='cash,copy,translate,stamp,progress through,direct,run,enter';
+var above='brow,mist,shape,layer,the crag,stone,forest,height'.split(',');
+var below='flow,basin,shape,vein,rippling,stone,cove,rock'.split(',');
+var trans='command,pace,roam,trail,frame,sweep,exercise,range'.split(',');
+var imper='track,shade,translate,stamp,progress through,direct,run,enter';
 imper=imper.split(',');
 var intrans='linger,dwell,rest,relax,hold,dream,hum'.split(',');
 var s='s,'.split(',');
