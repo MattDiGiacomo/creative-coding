@@ -1,5 +1,10 @@
 let quatrain = '';
 
+let grammar = tracery.createGrammar(
+
+
+
+  )
 
 function setup() {
   createCanvas(800, 800);
