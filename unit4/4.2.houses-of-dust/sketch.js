@@ -6,8 +6,6 @@ let grammar = tracery.createGrammar({
 
 
 });
-"origin": ["ON A #place#"],
-"place": ["HILL","BEACH","MOUNTAIN","ROLLERCOASTER","VOLCANO","SCHOOL"]
 
 
 
