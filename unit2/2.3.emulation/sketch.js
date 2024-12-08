@@ -3,7 +3,7 @@ createCanvas(800,800);
 background(255);
 stroke(0);
 strokeWeight(1);
-
+//Georg Nees "23-Ecke"
 line(400, 200, 400, 600);
 line(401, 201, 401, 601);
 line(402, 202, 402, 602);
