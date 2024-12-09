@@ -1,10 +1,3 @@
-let x_hour = 50;
-let x_minute = 50;
-let x_second = 50;
-
-let currentSecond = 0;
-
-
 function setup() {
   createCanvas(800, 800);
 }
@@ -12,27 +5,37 @@ function setup() {
 function draw() {
   background(135, 206, 235);
 
-  textSize(20);
-  text("hour: " + hour(), 60, 50);
-  text("minute: " + minute(), 140, 50);
-  text("second: " + second(), 245, 50);
-  
-  push();
-  line(50,150,50,350);
-  line(550,150,550,350);
-  pop();
+  let h = hour();
+  let m = minute();
+  let s = second();
 
-  push();
-  noStroke();
-  fill("red");
+  // Map time values to canvas dimensions, help from youtube and p5.js editor
+  let x_hour = map(h % 12, 0, 11, 50, width - 50);
+  let y_hour = map(h % 12, 0, 11, 50, height - 50);
+  let x_minute = map(m, 0, 59, 50, width - 50);
+  let y_minute = map(m, 0, 59, 50, height - 50);
+  let x_second = map(s, 0, 59, 50, width - 50);
+  let y_second = map(s, 0, 59, 50, height - 50);
 
-  x_hour = map(hour(), 0, 23, 50, 550);
-  circle(x_hour, 180, 40);
+  // Calculate sizes based on time, help from youtube and p5.js editor
+  let hourSize = map(sin(frameCount * 0.05), -1, 1, 30, 70);
+  let minuteSize = map(sin(frameCount * 0.1), -1, 1, 20, 60);
+  let secondSize = map(sin(frameCount * 0.2), -1, 1, 10, 50);
 
-  x_minute = map(minute(), 0, 59,50,550);
-  circle(x_minute,240, 40);
+  // Draw hour circle with changing size and color, help from youtube and p5.js editor
+  fill(255, 100, 150, 150 + 105 * sin(frameCount * 0.05));
+  ellipse(x_hour, y_hour, hourSize, hourSize);
 
-  x_second = map(second(), 0, 59, 50, 550);
-  circle(x_second, 300, 40);
-  pop();
+  // Draw minute square with changing size and color, help from youtube and p5.js editor
+  fill(150, 100, 255, 150 + 105 * sin(frameCount * 0.1));
+  rect(x_minute - minuteSize / 2, y_minute - minuteSize / 2, minuteSize, minuteSize);
+
+  // Draw second triangle with changing size and color, help from youtube and p5.js editor
+  fill(100, 255, 150, 150 + 105 * sin(frameCount * 0.2));
+  let halfSize = secondSize / 2;
+  triangle(x_second, y_second - halfSize, x_second - halfSize, y_second + halfSize, x_second + halfSize, y_second + halfSize);
 }
+
+//Artist statement: In this code, I decdied to use differnet shapes along a daigonal
+//line to represnt the aspcet of time, as well as using differnt colors
+// and speeds of flashing due to each respective time value
