@@ -24,7 +24,7 @@ function draw() {  // randomly assign background color and displays scoreboard
   // Update the timer
   if (millis() - end >= 1000) { // Check if 1 second has passed
     timer--;
-    end = millis(); // Reset lastTime
+    end = millis(); // Reset timer
   }
 
   // Check if the timer has reached 0
